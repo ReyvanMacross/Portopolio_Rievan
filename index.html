@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Rievan Rivaldy Nur Triana — profil, proyek, pengalaman, dan kontak.">
+    <meta name="theme-color" content="#1a1052">
+    <title>Portofolio | Rievan Rivaldy Nur Triana</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for Aero Feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Frutiger Aero Desktop Area -->
+    <div class="desktop" id="desktop">
+
+        <!-- Background Aero Orbs / Gloss Spheres -->
+        <div class="aero-orb orb-1"></div>
+        <div class="aero-orb orb-2"></div>
+        <div class="aero-orb orb-3"></div>
+
+        <!-- Desktop Icons Grid -->
+        <div class="desktop-icon-grid">
+            <div class="desktop-icon" onclick="openWindow('win-about')">
+                <div class="icon-glass">
+                    <i class="fa-solid fa-computer"></i>
+                </div>
+                <span class="icon-title">Profil</span>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('win-experience')">
+                <div class="icon-glass">
+                    <i class="fa-solid fa-folder-open"></i>
+                </div>
+                <span class="icon-title">Pengalaman</span>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('win-projects')">
+                <div class="icon-glass">
+                    <i class="fa-solid fa-cubes"></i>
+                </div>
+                <span class="icon-title">Proyek</span>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('win-skills')">
+                <div class="icon-glass">
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+                <span class="icon-title">Keahlian</span>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('win-certificates')">
+                <div class="icon-glass">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <span class="icon-title">Prestasi</span>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('win-contact')">
+                <div class="icon-glass">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <span class="icon-title">Kontak</span>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('win-recycle')">
+                <div class="icon-glass">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+                <span class="icon-title">Recycle Bin</span>
+            </div>
+        </div>
+
+
+        <!-- ================= WINDOW 1: MY COMPUTER (PROFILE & EDUCATION) ================= -->
+        <div class="aero-window" id="win-about" style="top: 30px; left: 80px; width: 680px; z-index: 10;">
+            <div class="window-titlebar">
+                <div class="titlebar-text">
+                    <i class="fa-solid fa-computer title-icon"></i>
+                    <span>Profile</span>
+                </div>
+                <div class="titlebar-controls">
+                    <button class="win-btn btn-min" onclick="minimizeWindow(this)" title="Minimize"></button>
+                    <button class="win-btn btn-max" onclick="maximizeWindow(this)" title="Maximize"></button>
+                    <button class="win-btn btn-close" onclick="closeWindow(this)" title="Close">✕</button>
+                </div>
+            </div>
+
+            <div class="window-toolbar">
+                <div class="nav-arrows">
+                    <button class="nav-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="nav-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="address-bar-aero">
+                    <i class="fa-solid fa-folder-open text-purple"></i>
+                    <span>Profile &amp; Education</span>
+                </div>
+                <div class="search-bar-aero">
+                    <input id="profileSearch" type="search" placeholder="Cari profil" aria-label="Cari informasi profil">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <div class="aero-sidebar">
+                    <div class="sidebar-group">
+                        <div class="sidebar-header"><i class="fa-solid fa-compass"></i> Navigation</div>
+                        <ul>
+                            <li onclick="openWindow('win-about')"><i class="fa-solid fa-user"></i> Profile Info</li>
+                            <li onclick="openWindow('win-skills')"><i class="fa-solid fa-microchip"></i> System Specs</li>
+                            <li onclick="openWindow('win-contact')"><i class="fa-solid fa-envelope"></i> Contact Me</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-group">
+                        <div class="sidebar-header"><i class="fa-solid fa-circle-info"></i> System Details</div>
+                        <p class="sidebar-info-item"><strong>Role:</strong> Software Engineer</p>
+                        <p class="sidebar-info-item"><strong>Location:</strong> Bandung, Indonesia</p>
+                    </div>
+                </div>
+
+                <div class="aero-main-content">
+                    <div class="profile-card-aero">
+                        <div class="avatar-glow">
+                            <img src="https://lh3.googleusercontent.com/a/ACg8ocIwS7MCRunSp-zpU9LIx7RskHdRkBzOI7HrljDM6igItL6XBkOS=s260-c-no" alt="Foto profil Rievan Rivaldy Nur Triana">
+                        </div>
+                        <div class="profile-details">
+                            <h2>RIEVAN RIVALDY NUR TRIANA</h2>
+                            <span class="badge-aero">Programmer &amp; Software Engineer</span>
+                        </div>
+                    </div>
+
+                    <div class="aero-card">
+                        <div class="card-header-aero"><i class="fa-solid fa-id-card"></i> About Me</div>
+                        <div class="card-body-aero">
+                            <p>Programmer dan software engineer yang memiliki keahlian solid dalam pengembangan Front-End dan Back-End (React.js, Tailwind CSS, Next.js). Berpengalaman dalam pengembangan UI/UX, perancangan aplikasi/web, serta pengeditan multimedia
+                                menggunakan Adobe Photoshop dan Premiere Pro.</p>
+                            <p style="margin-top: 8px;">Memiliki latar belakang kepemimpinan organisasi yang kuat, kemampuan komunikasi publik yang baik, serta minat besar dalam mengeksplorasi teknologi modern.</p>
+                        </div>
+                    </div>
+
+                    <div class="aero-card" style="margin-top: 15px;">
+                        <div class="card-header-aero"><i class="fa-solid fa-graduation-cap"></i> Riwayat Pendidikan</div>
+                        <div class="card-body-aero">
+                            <div class="edu-block">
+                                <h3>Universitas Teknologi Bandung (UTB)</h3>
+                                <span class="edu-tag">Strata 1 (S1) - Mahasiswa Aktif | 2024 - Sekarang</span>
+                            </div>
+                            <div class="divider-aero"></div>
+                            <div class="edu-block">
+                                <h3>SMK Negeri 4 Bandung</h3>
+                                <span class="edu-tag">Sekolah Menengah Kejuruan (SMK) - Rekayasa Perangkat Lunak (RPL) | 2021 - 2024</span>
+                                <p class="edu-detail">Fokus pada pengembangan perangkat lunak &amp; gim, mempelajari algoritma pemrograman, basis data, Object-Oriented Programming (OOP), dan arsitektur web modern.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="window-statusbar">
+                <span>2 items</span>
+                <span>Computer | System Rating: 5.0</span>
+            </div>
+        </div>
+
+
+        <!-- ================= WINDOW 2: EXPERIENCE & ORGANIZATIONS ================= -->
+        <div class="aero-window" id="win-experience" style="top: 50px; left: 140px; width: 700px; z-index: 11; display: none;">
+            <div class="window-titlebar">
+                <div class="titlebar-text">
+                    <i class="fa-solid fa-briefcase title-icon"></i>
+                    <span>Experience &amp; Organizations</span>
+                </div>
+                <div class="titlebar-controls">
+                    <button class="win-btn btn-min" onclick="minimizeWindow(this)"></button>
+                    <button class="win-btn btn-max" onclick="maximizeWindow(this)"></button>
+                    <button class="win-btn btn-close" onclick="closeWindow(this)">✕</button>
+                </div>
+            </div>
+
+            <div class="window-toolbar">
+                <div class="address-bar-aero" style="width: 100%;">
+                    <i class="fa-solid fa-folder-open text-purple"></i>
+                    <span>Experience &amp; Organizations</span>
+                </div>
+            </div>
+
+            <div class="window-body" style="flex-direction: column;">
+                <div class="aero-tabs">
+                    <button class="tab-aero active" onclick="switchTab('tab-work', this)"><i class="fa-solid fa-building"></i> Pengalaman Kerja</button>
+                    <button class="tab-aero" onclick="switchTab('tab-org', this)"><i class="fa-solid fa-users"></i> Organisasi & Relawan</button>
+                </div>
+
+                <div class="tab-pane active" id="tab-work">
+                    <div class="exp-grid">
+                        <div class="exp-card-aero">
+                            <div class="exp-top">
+                                <span class="exp-title">Internship Software Engineer</span>
+                                <span class="exp-badge">Jan 2024 - Mei 2024</span>
+                            </div>
+                            <div class="exp-org"><i class="fa-solid fa-building-flag"></i> PT. LEN Holding - Surya Energi Indotama (SEI)</div>
+                            <ul class="exp-list">
+                                <li>Mengembangkan aplikasi berbasis web dan mobile untuk mendukung kebutuhan digitalisasi operasional perusahaan selaku Software Developer.</li>
+                                <li>Membantu pelaksanaan tugas-tugas administratif dan koordinasi pada divisi Sekretaris Perusahaan (Corporate Secretary).</li>
+                                <li>Berhasil meraih <strong>Predikat Nilai A</strong> atas performa kerja, kedisiplinan, dan kontribusi nyata selama masa magang.</li>
+                            </ul>
+                        </div>
+
+                        <div class="exp-card-aero">
+                            <div class="exp-top">
+                                <span class="exp-title">Software Developer</span>
+                                <span class="exp-badge">Okt 2023 - Des 2023</span>
+                            </div>
+                            <div class="exp-org"><i class="fa-solid fa-laptop-code"></i> PT. JagooIT (Teaching Factory)</div>
+                            <ul class="exp-list">
+                                <li>Mengembangkan platform Talent Management System (TMS) guna menyokong efisiensi tata kelola serta manajemen bakat internal organisasi.</li>
+                                <li>Menerima penghargaan sertifikat kolaborasi proyek atas kemampuan eksekusi teknis dan kerja sama tim.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="tab-org" style="display: none;">
+                    <div class="exp-grid">
+                        <div class="exp-card-aero">
+                            <div class="exp-top">
+                                <span class="exp-title">Pengurus Komunitas / Peran Kepemimpinan Aktif</span>
+                                <span class="exp-badge">Nov 2023 - Nov 2024</span>
+                            </div>
+                            <div class="exp-org">SMKDEV - Leadership Kota Bandung</div>
+                            <p class="exp-desc">Mengkoordinasikan serta memimpin berbagai kegiatan komunitas developer muda untuk meningkatkan literasi teknologi digital di tingkat regional Bandung.</p>
+                        </div>
+
+                        <div class="exp-card-aero">
+                            <div class="exp-top">
+                                <span class="exp-title">Volunteer / Relawan</span>
+                                <span class="exp-badge">2023 - Sekarang</span>
+                            </div>
+                            <div class="exp-org">Google Developer Groups (GDG) Bandung</div>
+                            <p class="exp-desc">Berpartisipasi aktif dalam memfasilitasi, mempersiapkan, dan menyukseskan pelaksanaan event teknologi skala besar, termasuk event regional seperti GDG Cloud I/O.</p>
+                        </div>
+
+                        <div class="exp-card-aero">
+                            <div class="exp-top">
+                                <span class="exp-title">Leader / Ketua Organisasi</span>
+                                <span class="exp-badge">2022 - 2023</span>
+                            </div>
+                            <div class="exp-org">Orbit SMK Negeri 4 Bandung</div>
+                            <p class="exp-desc">Menginisiasi, merencanakan, dan memimpin jalannya berbagai program kerja kesiswaan serta kegiatan inovasi internal sekolah.</p>
+                        </div>
+
+                        <div class="exp-card-aero">
+                            <div class="exp-top">
+                                <span class="exp-title">Event Planner - Digital Visual & Audio</span>
+                                <span class="exp-badge">Des 2022 - Jan 2023</span>
+                            </div>
+                            <div class="exp-org">Event New Year Eve 2022/2023 - Mercure City Center Bandung</div>
+                            <p class="exp-desc">Mengelola seluruh perencanaan teknis serta eksekusi visual digital dan sistem tata suara demi memastikan kelancaran acara perayaan tahun baru.</p>
+                        </div>
+
+                        <div class="exp-card-aero">
+                            <div class="exp-top">
+                                <span class="exp-title">Member Student / Siswa Anggota</span>
+                                <span class="exp-badge">Apr 2022 - Jan 2023</span>
+                            </div>
+                            <div class="exp-org">Sagara Foundation</div>
+                            <p class="exp-desc">Terlibat secara intensif dalam program pelatihan teknologi dan pengerjaan proyek digital kolaboratif yang diadakan oleh yayasan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="window-statusbar">
+                <span>7 Records Loaded</span>
+                <span>Ready</span>
+            </div>
+        </div>
+
+
+        <!-- ================= WINDOW 3: PROJECTS ================= -->
+        <div class="aero-window" id="win-projects" style="top: 70px; left: 180px; width: 720px; z-index: 12; display: none;">
+            <div class="window-titlebar">
+                <div class="titlebar-text">
+                    <i class="fa-solid fa-cubes title-icon"></i>
+                    <span>Projects</span>
+                </div>
+                <div class="titlebar-controls">
+                    <button class="win-btn btn-min" onclick="minimizeWindow(this)"></button>
+                    <button class="win-btn btn-max" onclick="maximizeWindow(this)"></button>
+                    <button class="win-btn btn-close" onclick="closeWindow(this)">✕</button>
+                </div>
+            </div>
+
+            <div class="window-toolbar">
+                <div class="address-bar-aero" style="width:100%;">
+                    <i class="fa-solid fa-folder-open text-purple"></i>
+                    <span>Selected Projects</span>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <div class="projects-container">
+
+                    <div class="proj-card-aero">
+                        <div class="proj-header-aero bg-purple-glow">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <h3>Santivity Project</h3>
+                        </div>
+                        <div class="proj-body-aero">
+                            <div class="proj-role-text">Front-End Developer / Anggota Proyek | Sep 2022 - Okt 2023</div>
+                            <p>Berhasil merancang dan mengimplementasikan aspek front-end untuk game bergenre Real-Time Strategy (RTS) sekaligus membangun situs web resmi proyek tersebut.</p>
+                            <div class="proj-pills">
+                                <span class="pill">RTS Game</span>
+                                <span class="pill">Front-End</span>
+                                <span class="pill">Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proj-card-aero">
+                        <div class="proj-header-aero bg-purple-glow">
+                            <i class="fa-solid fa-heart"></i>
+                            <h3>Online Wedding Invitations</h3>
+                        </div>
+                        <div class="proj-body-aero">
+                            <div class="proj-role-text">Full-Stack Developer / Kreator | Jan 2023 - Juni 2023</div>
+                            <p>Mendesain dan membangun platform undangan pernikahan online yang dinamis, responsif, dan interaktif menggunakan Next.js dan Firebase.</p>
+                            <div class="proj-pills">
+                                <span class="pill">Next.js</span>
+                                <span class="pill">Firebase</span>
+                                <span class="pill">Full-Stack</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proj-card-aero">
+                        <div class="proj-header-aero bg-purple-glow">
+                            <i class="fa-solid fa-users-gear"></i>
+                            <h3>Talent Management System</h3>
+                        </div>
+                        <div class="proj-body-aero">
+                            <div class="proj-role-text">Software Developer - PT. JagooIT | Okt 2023 - Des 2023</div>
+                            <p>Mengembangkan platform Talent Management System guna menyokong efisiensi tata kelola serta manajemen bakat internal organisasi.</p>
+                            <div class="proj-pills">
+                                <span class="pill">React.js</span>
+                                <span class="pill">Tailwind CSS</span>
+                                <span class="pill">System Arch</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proj-card-aero">
+                        <div class="proj-header-aero bg-purple-glow">
+                            <i class="fa-solid fa-solar-panel"></i>
+                            <h3>Enterprise Operational Web App</h3>
+                        </div>
+                        <div class="proj-body-aero">
+                            <div class="proj-role-text">Software Engineer - SEI / LEN Holding | Jan 2024 - Mei 2024</div>
+                            <p>Mengembangkan aplikasi berbasis web dan mobile untuk mendukung kebutuhan digitalisasi operasional perusahaan energi terbarukan.</p>
+                            <div class="proj-pills">
+                                <span class="pill">Web App</span>
+                                <span class="pill">Mobile Web</span>
+                                <span class="pill">Enterprise</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="window-statusbar">
+                <span>4 Projects Active</span>
+                <span>Frutiger Aero View</span>
+            </div>
+        </div>
+
+
+        <!-- ================= WINDOW 4: SKILLS & CONTROL PANEL ================= -->
+        <div class="aero-window" id="win-skills" style="top: 90px; left: 120px; width: 660px; z-index: 13; display: none;">
+            <div class="window-titlebar">
+                <div class="titlebar-text">
+                    <i class="fa-solid fa-sliders title-icon"></i>
+                    <span>Skills &amp; Tools</span>
+                </div>
+                <div class="titlebar-controls">
+                    <button class="win-btn btn-min" onclick="minimizeWindow(this)"></button>
+                    <button class="win-btn btn-max" onclick="maximizeWindow(this)"></button>
+                    <button class="win-btn btn-close" onclick="closeWindow(this)">✕</button>
+                </div>
+            </div>
+
+            <div class="window-toolbar">
+                <div class="address-bar-aero" style="width:100%;">
+                    <i class="fa-solid fa-folder-open text-purple"></i>
+                    <span>Skills &amp; Tools</span>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <div class="skills-wrapper">
+
+                    <div class="skills-section-aero">
+                        <div class="skills-sec-title"><i class="fa-solid fa-code"></i> Technical & Software Engineering</div>
+                        <div class="skills-grid-aero">
+                            <div class="skill-pill-aero"><i class="fa-brands fa-react react-ic"></i> React.js</div>
+                            <div class="skill-pill-aero"><i class="fa-brands fa-css3-alt tw-ic"></i> Tailwind CSS</div>
+                            <div class="skill-pill-aero"><i class="fa-solid fa-bolt next-ic"></i> Next.js</div>
+                            <div class="skill-pill-aero"><i class="fa-solid fa-bolt vite-ic"></i> Vite.js</div>
+                            <div class="skill-pill-aero"><i class="fa-brands fa-js js-ic"></i> JavaScript</div>
+                            <div class="skill-pill-aero"><i class="fa-solid fa-fire fb-ic"></i> Firebase</div>
+                            <div class="skill-pill-aero"><i class="fa-brands fa-java java-ic"></i> OOP & Java</div>
+                            <div class="skill-pill-aero"><i class="fa-solid fa-laptop-code"></i> Front-End Dev</div>
+                            <div class="skill-pill-aero"><i class="fa-solid fa-server"></i> Back-End Dev</div>
+                            <div class="skill-pill-aero"><i class="fa-solid fa-object-group"></i> UI/UX Design</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-section-aero" style="margin-top: 15px;">
+                        <div class="skills-sec-title"><i class="fa-solid fa-photo-film"></i> Kreatif & Multimedia</div>
+                        <div class="skills-grid-aero">
+                            <div class="skill-pill-aero"><i class="fa-solid fa-image ps-ic"></i> Adobe Photoshop</div>
+                            <div class="skill-pill-aero"><i class="fa-solid fa-film pr-ic"></i> Adobe Premiere Pro</div>
+                            <div class="skill-pill-aero"><i class="fa-solid fa-palette"></i> Desain Grafis</div>
+                            <div class="skill-pill-aero"><i class="fa-solid fa-video"></i> Video Editing</div>
+                            <div class="skill-pill-aero"><i class="fa-solid fa-sliders"></i> Audio Mixing</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-section-aero" style="margin-top: 15px;">
+                        <div class="skills-sec-title"><i class="fa-solid fa-globe"></i> Bahasa & Komunikasi</div>
+                        <div class="skills-grid-aero">
+                            <div class="skill-pill-aero"><i class="fa-solid fa-flag"></i> Bahasa Indonesia (Native)</div>
+                            <div class="skill-pill-aero"><i class="fa-solid fa-language"></i> Bahasa Inggris (Professional)</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="window-statusbar">
+                <span>17 System Modules Functional</span>
+                <span>Aero Engine v2.0</span>
+            </div>
+        </div>
+
+
+        <!-- ================= WINDOW 5: CERTIFICATES.TXT (NOTEPAD) ================= -->
+        <div class="aero-window" id="win-certificates" style="top: 110px; left: 220px; width: 620px; z-index: 14; display: none;">
+            <div class="window-titlebar">
+                <div class="titlebar-text">
+                    <i class="fa-solid fa-file-lines title-icon"></i>
+                    <span>Awards &amp; Certificates</span>
+                </div>
+                <div class="titlebar-controls">
+                    <button class="win-btn btn-min" onclick="minimizeWindow(this)"></button>
+                    <button class="win-btn btn-max" onclick="maximizeWindow(this)"></button>
+                    <button class="win-btn btn-close" onclick="closeWindow(this)">✕</button>
+                </div>
+            </div>
+
+            <div class="window-menu-bar">
+                <span>File</span><span>Edit</span><span>Format</span><span>View</span><span>Help</span>
+            </div>
+
+            <div class="window-body notepad-aero">
+                <pre class="notepad-text">
+============================================================
+ ACHIEVEMENTS & CERTIFICATES - RIEVAN RIVALDY NUR TRIANA
+============================================================
+
+[+] PRESTASI & LOMBA:
+------------------------------------------------------------
+1. JUARA 1 BASIC CODING CHALLENGE SMKDEV (11/2023)
+   - Memenangkan peringkat pertama dalam kompetisi analisis logis
+     dan pemecahan masalah pemrograman dengan JavaScript.
+
+2. JUARA 2 NATIONAL SMART SCHOOL COMPETITION (12/2021)
+   - Meraih peringkat kedua tingkat nasional dalam pembuatan
+     situs web inovatif berbasis kebutuhan siswa.
+
+[+] BEASISWA & BOOTCAMP:
+------------------------------------------------------------
+3. PENERIMA BEASISWA SMKDEV BOOTCAMP BATCH 1 (10/2023 - 12/2023)
+   - Menyelesaikan pelatihan intensif Front-End dengan fokus
+     materi React.js, Vite.js, dan Tailwind CSS.
+
+[+] SERTIFIKASI PROFESIONAL:
+------------------------------------------------------------
+4. ORACLE ACADEMY - Java Fundamentals (02/2023)
+5. KEMAKOM GOES TO SCHOOL (08/2022)
+6. LITERASI DIGITAL NASIONAL KOMINFO (11/2021)
+
+============================================================
+Status: Verified Records
+                </pre>
+            </div>
+
+            <div class="window-statusbar">
+                <span>Ln 28, Col 1</span>
+                <span>UTF-8</span>
+            </div>
+        </div>
+
+
+        <!-- ================= WINDOW 6: INTERNET EXPLORER (CONTACT) ================= -->
+        <div class="aero-window" id="win-contact" style="top: 60px; left: 160px; width: 660px; z-index: 15; display: none;">
+            <div class="window-titlebar">
+                <div class="titlebar-text">
+                    <i class="fa-solid fa-globe title-icon text-cyan"></i>
+                    <span>Contact</span>
+                </div>
+                <div class="titlebar-controls">
+                    <button class="win-btn btn-min" onclick="minimizeWindow(this)"></button>
+                    <button class="win-btn btn-max" onclick="maximizeWindow(this)"></button>
+                    <button class="win-btn btn-close" onclick="closeWindow(this)">✕</button>
+                </div>
+            </div>
+
+            <div class="window-toolbar">
+                <div class="address-bar-aero" style="width: 100%;">
+                    <i class="fa-solid fa-lock text-purple"></i>
+                    <span>Get in touch</span>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <div class="contact-aero-container">
+                    <div class="contact-header-aero">
+                        <i class="fa-solid fa-paper-plane contact-icon-aero"></i>
+                        <div>
+                            <h2>Hubungi Rievan Rivaldy</h2>
+                            <p>Kirimkan pesan langsung melalui formulir interaktif</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-aero-grid">
+                        <div class="contact-info-list">
+                            <div class="info-card-aero">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <span>Email:</span>
+                                    <strong>rievanrivaldynurtrianax@gmail.com</strong>
+                                </div>
+                            </div>
+
+
+
+                            <div class="info-card-aero">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <div>
+                                    <span>LinkedIn:</span>
+                                    <strong>Rievan Rivaldy Nur Triana</strong>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <form class="form-aero" id="contactFormAero" data-recipient="rievanrivaldynurtrianax@gmail.com">
+                            <div class="form-group-aero">
+                                <label for="contactName">Nama Anda:</label>
+                                <input id="contactName" name="name" type="text" autocomplete="name" placeholder="Nama" required>
+                            </div>
+                            <div class="form-group-aero">
+                                <label for="contactEmail">Email Anda:</label>
+                                <input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="nama@email.com" required>
+                            </div>
+                            <div class="form-group-aero">
+                                <label for="contactMessage">Pesan Anda:</label>
+                                <textarea id="contactMessage" name="message" rows="4" placeholder="Tulis pesan di sini" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit-aero">
+                                <i class="fa-solid fa-paper-plane"></i> Kirim Pesan
+                            </button>
+                            <p id="contactFormStatus" class="form-status" role="status">Pesan akan disiapkan di aplikasi email kamu.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="window-statusbar">
+                <span>Protected Mode: On</span>
+                <span>100% Zoom</span>
+            </div>
+        </div>
+
+
+        <!-- ================= WINDOW 7: RECYCLE BIN ================= -->
+        <div class="aero-window" id="win-recycle" style="top: 150px; left: 300px; width: 420px; z-index: 16; display: none;">
+            <div class="window-titlebar">
+                <div class="titlebar-text">
+                    <i class="fa-solid fa-trash-can title-icon"></i>
+                    <span>Recycle Bin</span>
+                </div>
+                <div class="titlebar-controls">
+                    <button class="win-btn btn-min" onclick="minimizeWindow(this)"></button>
+                    <button class="win-btn btn-max" onclick="maximizeWindow(this)"></button>
+                    <button class="win-btn btn-close" onclick="closeWindow(this)">✕</button>
+                </div>
+            </div>
+
+            <div class="window-body" style="padding: 25px; text-align: center; flex-direction: column; align-items: center;">
+                <i class="fa-solid fa-shield-cat" style="font-size: 3.5rem; color: #a855f7; margin-bottom: 12px; filter: drop-shadow(0 0 10px #311f94);"></i>
+                <h3 style="font-size: 14px; color: #ffffff;">Recycle Bin Kosong</h3>
+                <p style="font-size: 11px; color: #b3b3b3; margin-top: 6px;">Seluruh sistem kode bersih tanpa error/bug.</p>
+            </div>
+
+            <div class="window-statusbar">
+                <span>0 Items</span>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Desktop -->
+
+
+    <!-- ================= WINDOWS 7 START MENU ================= -->
+    <div class="start-menu-aero" id="startMenuAero">
+        <div class="start-header-aero">
+            <div class="user-avatar-small">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <span class="user-name-aero">Rievan Rivaldy Nur Triana</span>
+        </div>
+
+        <div class="start-body-aero">
+            <div class="start-left-panel">
+                <div class="start-item-aero" onclick="openWindow('win-about')">
+                    <i class="fa-solid fa-computer start-ic bg-purple"></i>
+                    <div>
+                        <strong>Profil</strong>
+                        <span>Profil & Pendidikan</span>
+                    </div>
+                </div>
+
+                <div class="start-item-aero" onclick="openWindow('win-experience')">
+                    <i class="fa-solid fa-briefcase start-ic bg-purple"></i>
+                    <div>
+                        <strong>Pengalaman Kerja</strong>
+                        <span>Karir & Organisasi</span>
+                    </div>
+                </div>
+
+                <div class="start-item-aero" onclick="openWindow('win-projects')">
+                    <i class="fa-solid fa-cubes start-ic bg-purple"></i>
+                    <div>
+                        <strong>Proyek Saya</strong>
+                        <span>Portofolio Digital</span>
+                    </div>
+                </div>
+
+                <div class="start-item-aero" onclick="openWindow('win-skills')">
+                    <i class="fa-solid fa-sliders start-ic bg-purple"></i>
+                    <div>
+                        <strong>Keahlian</strong>
+                        <span>Spesifikasi & Skill</span>
+                    </div>
+                </div>
+
+                <div class="start-item-aero" onclick="openWindow('win-certificates')">
+                    <i class="fa-solid fa-award start-ic bg-purple"></i>
+                    <div>
+                        <strong>Prestasi</strong>
+                        <span>Sertifikat & Prestasi</span>
+                    </div>
+                </div>
+
+                <div class="start-item-aero" onclick="openWindow('win-contact')">
+                    <i class="fa-solid fa-globe start-ic bg-purple"></i>
+                    <div>
+                        <strong>Kontak</strong>
+                        <span>Hubungi Rievan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="start-right-panel">
+                <div class="start-link-aero" onclick="openWindow('win-about')"><i class="fa-solid fa-user-gear"></i> Profile</div>
+                <div class="start-link-aero" onclick="openWindow('win-experience')"><i class="fa-solid fa-folder"></i> Documents</div>
+                <div class="start-link-aero" onclick="openWindow('win-projects')"><i class="fa-solid fa-layer-group"></i> Projects</div>
+                <div class="start-link-aero" onclick="openWindow('win-skills')"><i class="fa-solid fa-gear"></i> Control Panel</div>
+                <div class="start-link-aero" onclick="openWindow('win-contact')"><i class="fa-solid fa-paper-plane"></i> Contact</div>
+            </div>
+        </div>
+
+        <div class="start-footer-aero">
+            <button class="btn-shutdown-aero" onclick="document.getElementById('startMenuAero').classList.remove('active')">
+                <i class="fa-solid fa-xmark"></i> Tutup Menu
+            </button>
+        </div>
+    </div>
+
+
+    <!-- ================= WINDOWS 7 AERO TASKBAR ================= -->
+    <div class="taskbar-aero">
+        <button class="orb-start-btn" id="startBtnAero" type="button" aria-label="Buka menu portofolio" title="Menu">
+            <div class="orb-inner">
+                <i class="fa-brands fa-windows orb-logo"></i>
+            </div>
+        </button>
+
+        <span class="taskbar-brand">Rievan <span>/ Portfolio OS</span></span>
+
+        <div class="taskbar-apps" id="taskbarApps">
+            <!-- Dynamic Open Windows Icons -->
+        </div>
+
+        <div class="system-tray-aero">
+            <i class="fa-solid fa-shield-halved tray-ic" title="System Security: Protected"></i>
+            <i class="fa-solid fa-wifi tray-ic" title="Internet Access"></i>
+            <i class="fa-solid fa-volume-high tray-ic" title="Speakers: 100%"></i>
+            <div class="tray-clock">
+                <span id="timeClock">12:00 PM</span>
+                <span id="dateClock">17/10/2026</span>
+            </div>
+            <div class="show-desktop-btn" onclick="toggleShowDesktop()" title="Show Desktop"></div>
+        </div>
+    </div>
+
+
+    <!-- ================= AERO NOTIFICATION DIALOG ================= -->
+    <div class="aero-dialog" id="aeroDialog">
+        <div class="window-titlebar">
+            <div class="titlebar-text"><span>Aero System Notification</span></div>
+            <div class="titlebar-controls">
+                <button class="win-btn btn-close" onclick="closeAeroDialog()">✕</button>
+            </div>
+        </div>
+        <div class="dialog-body-aero">
+            <i class="fa-solid fa-circle-check text-purple-glow"></i>
+            <p id="aeroDialogMessage">Message text here...</p>
+        </div>
+        <div class="dialog-footer-aero">
+            <button class="btn-aero-ok" onclick="closeAeroDialog()">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
